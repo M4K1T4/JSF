@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <title>Salve</title>
+    </h:head>
+    <body>
+        <h:form>  
+            <p:menubar>
+                <p:menuitem value="Início" icon="ui-icon-home" outcome="inicio" />
+                <p:submenu label="Cadastrar" icon="ui-icon-folder-collapsed">
+                    <p:menuitem value="Pessoa"  outcome="home"/>
+                    <p:menuitem value="Slá" url="#" />
+                </p:submenu>
+
+                <p:submenu label="Editar" icon="ui-icon-pencil">
+                    <p:menuitem value="Desfazer" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+                    <p:menuitem value="Refazer" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+                </p:submenu>
+
+                <p:submenu label="Ajuda" icon="ui-icon-help">
+                    <p:menuitem value="Conteúdo" outcome="ajuda" />
+                </p:submenu>
+
+                <p:menuitem value="Sair" url="http://www.google.com" icon="ui-icon-close" />
+
+                <f:facet name="options">
+                    <p:commandButton type="button" value="Slá" icon="ui-icon-extlink" />
+                </f:facet>
+            </p:menubar>
+        </h:form>
+    </body>
+</html>
